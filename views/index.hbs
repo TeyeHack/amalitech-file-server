@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>AMALITECH FILE-SERVER</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="#" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+    <!-- MDB -->
+    <link rel="stylesheet" href="../css/mdb.min.css" />
+  </head>
+  <body>
+   
+    <!-- Start your project here-->
+    <div class="container">
+      <div class="d-flex justify-content-center align-items-center" style="height: 70vh;">
+        <div class="col-md-12">
+        <form class="form-group" action="auth/index" method="POST">
+      <div class="row col-md-6">
+        <h1>Login</h1>
+        <input name="username"  placeholder="username here" type="text" class="form-control mb-3">
+        <input name="password"  placeholder="password here"  type="password" class="form-control">
+        <a class="m-1" href="forgetpass">forget password?</a>
+        <button class="btn btn-primary "   type="submit">Login</button>
+        <a class="m-2" href="signup">signup here?</a>
+      </div>
+        </form>
+        <div class="row col-md-6">
+        <!--passing a true message -->
+        {{#if message}}<h4 class="alert alert-danger mb-2">{{message}}</h4>{{/if}}
+        </div>
+      </div>
+      </div>
+    </div>
+    <!-- End your project here-->
+
+    <!-- MDB -->
+    <script type="text/javascript" src="../js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript"></script>
+  </body>
+</html>
