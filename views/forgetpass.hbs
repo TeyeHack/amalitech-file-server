@@ -14,7 +14,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
     />
-      <!-- MDB -->
+       <!-- MDB -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css" rel="stylesheet"/>
   </head>
   <body>
@@ -22,29 +22,28 @@
     <div class="container">
       <div class="d-flex justify-content-center align-items-center" style="height: 70vh;">
         <div class="col-md-12">
-        <form class="form-group" action="/auth/signup" method="POST">
+        <form class="form-group" method="post" action="/auth/forgetpass" >
       <div class="row col-md-6">
-        <h1>Signup</h1>
-       
-        <input name="name"  placeholder="Name here" type="text" class="form-control mb-3">
-        <input name="email"  placeholder="email here" type="email" class="form-control mb-3">
-        <input name="password"  placeholder="Enter password here"  type="password" class="form-control mb-3">
-         <input name="pconfirm"  placeholder="confirmed password here"  type="password" class="form-control mb-3">
-         <a class="m-1" href="forgetpass">forget password?</a>
-        <button class="btn btn-primary" type="submit">Signup</button>
-        <a class="m-2" href="/">Click to Login</a>
+        <h1>Reset Password</h1>
+        <input name="email"  placeholder="Email here" type="email" class="form-control mb-3">
+        <input name="oldpass"  placeholder="Enter Old password here"  type="password" class="form-control  mb-3" >
+        <input name="password"  placeholder="New password here"  type="password" class="form-control mb-3" >
+        
+        <button class="btn btn-primary" type="submit">Change password</button>
+        <a class="m-2" href="/">Login here?</a>
       </div>
         </form>
-        <div class="row col-md-6">
-       <!--passing a true message -->   
- {{#if message}}<h4 class="alert alert-danger mb-2">{{message}}</h4>{{/if}}
-     
-       </div>
       </div>
        
       </div>
+       <div class="row col-md-6">
+       <!--passing a true message -->   
+      {{#if message}}<h4 class="alert alert-danger mb-2">{{message}}</h4>{{/if}}
+     
+       </div>
     </div>
     <!-- End your project here-->
+
 
     <!-- Custom scripts -->
     <script type="text/javascript"></script>
